@@ -4,6 +4,10 @@
 }
 .photo {
 position: relative;
+left: 100px;
+top: 100px;
+
+box-shadow: 3px 0 5px  1px rgb(0, 0, 255, 0.5);
 }
 
 .photo::before {
@@ -21,6 +25,7 @@ position: relative;
 }
 
 .photo:hover .list {
+    box-shadow: 0 -3px 5px 2px red;
     opacity: 1;
 }
 
@@ -28,10 +33,13 @@ position: relative;
     display: flex;
     list-style: none;
     position: absolute;
-    top: 50px;
-    right: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
     gap: 24px;
     opacity: 0;
+   padding-left: 0;
 }
 
 .item {
